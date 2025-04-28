@@ -424,7 +424,8 @@ header.frame {
 }
 
 .poster--half {
-	height: 30vw;
+	/* height: 30vw; */
+	height: 400px;
 }
 
 .poster__inner {
@@ -712,12 +713,17 @@ textarea {
 /* --- RESPONSIVE SIZES SECTION --- */
 /* -------------------------------- */
 @media screen and (max-width: 1200px) {
+
+	.poster--half {
+		height: 300px;
+	}
+
 	.flex-container {
 		gap: 24px;
 	}
 
 	.layout-wrapper {
-		margin: 0 auto;
+		margin: 0 auto 100px auto;
 	}
 
 	.card-wrap {
@@ -751,17 +757,12 @@ textarea {
 		grid-template-areas: none;
 	}
 
-	.card-wrap {
-		grid-template-columns: 1fr;
-	}
-
-	.image-container img {
-		top: -150px;
-		clip-path: inset(0 0 220px 0);
-	}
-
 	#typewriter span.break-before {
 		display: block;
+	}
+
+	.text-container {
+		margin: 0 30px 30px 30px;
 	}
 
 	.text-container p {
@@ -774,13 +775,14 @@ textarea {
 		max-width: 500px;
 	}
 
-	.card-wrap {
-		margin: 40px 16px 0 16px;
+	.poster--half {
+		height: 100px;
 	}
 
-	.contact-section {
-		margin: 0;
-		padding-top: 0;
+	.image-container img {
+		top: -150px;
+		clip-path: inset(0 0 220px 0);
+		left: -116px;
 	}
 
 	.flex-container {
@@ -789,12 +791,14 @@ textarea {
 		border-radius: 0;
 	}
 
-	.image-container img {
-		left: -116px;
+	.card-wrap {
+		grid-template-columns: 1fr;
+		margin: 40px 16px 0 16px;
 	}
 
-	.text-container {
-		margin: 0 30px 30px 30px;
+	.contact-section {
+		margin: 0;
+		padding-top: 0;
 	}
 
 	.modal-content {

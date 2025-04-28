@@ -21,7 +21,7 @@
 html,
 body {
 	width: 100%;
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 }
 
 body {
@@ -768,11 +768,6 @@ textarea {
 	.image-container img {
 		top: -150px;
 		clip-path: inset(0 0 220px 0);
-	}
-
-	.poster {
-		--offset-x: 10%; /* Adjust for mobile */
-		--offset-y: 10%; /* Adjust for mobile */
 	}
 
 	#typewriter span.break-before {

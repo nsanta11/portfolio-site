@@ -592,8 +592,12 @@ video {
 .close-btn {
 	position: absolute;
 	right: 20px;
-	top: 15px;
-	font-size: 24px;
+	top: 0px;
+	font-size: 32px;
+	color: #ffffff;
+}
+
+.close-btn:hover {
 	cursor: pointer;
 }
 

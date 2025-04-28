@@ -746,6 +746,10 @@ textarea {
 		padding: 24px;
 	}
 
+	.title p {
+		font-size: 20px;
+	}
+
 	.frame {
 		grid-template-columns: 1fr;
 		grid-template-areas: none;

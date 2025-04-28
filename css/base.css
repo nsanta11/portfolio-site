@@ -82,14 +82,6 @@ h2 {
 }
 
 @font-face {
-	font-family: 'hacked_crtregular';
-	src: url('../fonts/hacked_crt-webfont.woff2') format('woff2'),
-		url('../fonts/hacked_crt-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
 	font-family: 'h19a_lunaluna';
 	src: url('../fonts/h19a-luna-webfont.woff2') format('woff2'),
 		url('../fonts/h19a-luna-webfont.woff') format('woff');
@@ -441,12 +433,6 @@ header.frame {
 	font-weight: 400;
 }
 
-.font-2 {
-	font-family: "hacked_crtregular", sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-
 .font-3 {
 	font-family: "macula-solid", sans-serif;
 	font-weight: 500;
@@ -759,6 +745,10 @@ textarea {
 	.title {
 		min-height: 320px;
 		padding: 24px;
+	}
+
+	.title p {
+		font-size: 20px;
 	}
 
 	.frame {

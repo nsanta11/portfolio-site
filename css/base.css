@@ -770,6 +770,11 @@ textarea {
 		clip-path: inset(0 0 220px 0);
 	}
 
+	.poster {
+		--offset-x: 10%; /* Adjust for mobile */
+		--offset-y: 10%; /* Adjust for mobile */
+	}
+
 	#typewriter span.break-before {
 		display: block;
 	}

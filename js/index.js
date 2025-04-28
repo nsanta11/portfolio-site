@@ -88,39 +88,40 @@ window.addEventListener('load', () => {
 
 gsap.registerPlugin(TextPlugin);
 
-function addWord(index) {
+window.addEventListener("load", () => {
+  function addWord(index) {
     if (index >= words.length) return;
-  
+
     // Create a new span for the word
     const wordSpan = document.createElement("span");
     wordSpan.textContent = (index === 0 ? "" : " ") + words[index];
     wordSpan.style.opacity = 0; // start hidden
 
     // Add this for the last word
-if (index === words.length - 1) {
-    wordSpan.classList.add("break-before");
-  }
-  
+    if (index === words.length - 1) {
+      wordSpan.classList.add("break-before");
+    }
+
     typewriter.appendChild(wordSpan); // add to the line
-  
+
     // Animate the first word separately (with fade-in)
     gsap.to(wordSpan, {
       opacity: 1,
       duration: 1.2,
       ease: "power1.out",
-      delay: 1 // Delay = title's delay (0.5) + duration (1.1 buffer)
+      delay: 1, // Delay = title's delay (0.5) + duration (1.1 buffer)
     });
-  
+
     // Call next word after delay
     setTimeout(() => {
       addWord(index + 1);
     }, 500); // adjust delay as needed
   }
-  
-addWord(0);
+
+  addWord(0);
+});
 
 //Ensuring smooth scroll behavior for anchor tags
-// Make sure GSAP is loaded on your page
 // Make sure GSAP is loaded on your page
 gsap.registerPlugin(ScrollToPlugin);
 

@@ -773,10 +773,11 @@ textarea {
 	.layout-wrapper {
 		padding: 0;
 		max-width: 500px;
+		margin: 0 auto;
 	}
 
 	.poster--half {
-		height: 100px;
+		height: 150px;
 	}
 
 	.image-container img {

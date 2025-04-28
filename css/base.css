@@ -428,10 +428,12 @@ header.frame {
 }
 
 .poster__inner {
-	width: calc(100% + var(--offset-x) * 2);
-	height: calc(100% + var(--offset-y) * 2);
-	background-size: cover;
-	background-position: 50% 50%;
+	/* width: calc(100% + var(--offset-x) * 2);
+	height: calc(100% + var(--offset-y) * 2); */
+	width: 100%;
+	height: 100%;
+	/* background-size: cover;
+	background-position: 50% 50%; */
 }
 
 .poster__inner video {

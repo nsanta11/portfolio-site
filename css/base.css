@@ -10,7 +10,7 @@
 	--color-bg: #000000;
 	--color-link: #f3f3f3;
 	--color-link-hover: rgb(255, 0, 111);
-	--page-padding: 2rem 3rem;
+	/* --page-padding: 2rem 3rem; */
 }
 
 ::selection {

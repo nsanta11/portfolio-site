@@ -81,7 +81,7 @@ window.addEventListener('load', () => {
         scale: 1,
         opacity: 1,
         ease: "power1.out",
-        delay: 3 // Delay = title's delay (0.5) + duration (1.1 buffer)
+        delay: 2.5 // Delay = title's delay (0.5) + duration (1.1 buffer)
     });
     showNextWord(); // kick it off
 });
@@ -109,7 +109,7 @@ window.addEventListener("load", () => {
       opacity: 1,
       duration: 1.2,
       ease: "power1.out",
-      delay: 1, // Delay = title's delay (0.5) + duration (1.1 buffer)
+      delay: 0.5, // Delay = title's delay (0.5) + duration (1.1 buffer)
     });
 
     // Call next word after delay

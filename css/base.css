@@ -230,6 +230,7 @@ header.frame {
 
 .title p {
 	font-size: 24px;
+	margin: 12px 0 24px 0;
 }
 
 .title button, .send {
@@ -343,7 +344,7 @@ header.frame {
 }
 
 .text-container p {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Montserrat", sans-serif;
 	padding: 0 40px 0 0;
 	font-weight: 400;
 	font-size: 16px;
@@ -449,6 +450,13 @@ header.frame {
 .font-3 {
 	font-family: "macula-solid", sans-serif;
 	font-weight: 500;
+}
+
+.font-4 {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
 }
 
 .size-1 {

@@ -206,7 +206,6 @@ header.frame {
 
 .frame__title {
 	grid-area: title;
-	/* font-family: "macula-solid", sans-serif; */
 	font-size: clamp(2rem, 10vw, 4rem);
 	font-weight: 500;
 	line-height: 1;
@@ -221,8 +220,8 @@ header.frame {
 }
 
 .title p {
+	font-family: "Montserrat", sans-serif;
 	font-size: 24px;
-	margin: 12px 0 24px 0;
 }
 
 .title button, .send {
@@ -745,10 +744,6 @@ textarea {
 	.title {
 		min-height: 320px;
 		padding: 24px;
-	}
-
-	.title p {
-		font-size: 20px;
 	}
 
 	.frame {

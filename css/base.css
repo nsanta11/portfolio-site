@@ -638,10 +638,7 @@ video {
 	margin: 36px auto;
 	padding: 24px;
 	z-index: 1000;
-}
-
-.contact-section h2 {
-	font-family: 'hacked_crtregular';
+	width: 480px;
 }
 
 .contact-card {
@@ -661,7 +658,7 @@ video {
 }
 
 label {
-	font-family: 'hacked_crtregular';
+	font-family: "Montserrat", sans-serif;
 	display: block;
 	margin-bottom: 8px;
 }
@@ -812,6 +809,7 @@ textarea {
 	.contact-section {
 		margin: 0;
 		padding-top: 0;
+		width: 100%;
 	}
 
 	.modal-content {

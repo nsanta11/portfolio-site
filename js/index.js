@@ -738,10 +738,6 @@ const applyCustomEffect_9 = (contentElement) => {
 
 // Update the scroll function to call the respective applyCustomEffect_N functions
 const scroll = () => {
-  let width = window.innerWidth;
-  if (width < 768) {
-    return;
-  }
   contentWithSVG.forEach((contentElement, position) => {
     switch (position) {
       case 0:

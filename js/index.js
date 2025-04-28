@@ -77,11 +77,11 @@ window.addEventListener('load', () => {
     });
       // Animate button (starts after the title finishes)
     gsap.to(".portfolio", {
-        duration: 1,
+        duration: 0.5,
         scale: 1,
         opacity: 1,
         ease: "power1.out",
-        delay: 1.3 // Delay = title's delay (0.5) + duration (1.1 buffer)
+        delay: 3 // Delay = title's delay (0.5) + duration (1.1 buffer)
     });
     showNextWord(); // kick it off
 });
@@ -94,7 +94,7 @@ function addWord(index) {
     // Create a new span for the word
     const wordSpan = document.createElement("span");
     wordSpan.textContent = (index === 0 ? "" : " ") + words[index];
-    wordSpan.style.opacity = 0.2; // start hidden
+    wordSpan.style.opacity = 0; // start hidden
 
     // Add this for the last word
 if (index === words.length - 1) {
@@ -106,14 +106,15 @@ if (index === words.length - 1) {
     // Animate the first word separately (with fade-in)
     gsap.to(wordSpan, {
       opacity: 1,
-      duration: 1,
-      ease: "power1.out"
+      duration: 1.2,
+      ease: "power1.out",
+      delay: 1 // Delay = title's delay (0.5) + duration (1.1 buffer)
     });
   
     // Call next word after delay
     setTimeout(() => {
       addWord(index + 1);
-    }, 350); // adjust delay as needed
+    }, 500); // adjust delay as needed
   }
   
 addWord(0);
